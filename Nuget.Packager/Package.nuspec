@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SEBSET</id>
+    <version>1.0.0-ALPHA</version>
+    <title>BSET - BlockScript Edit Tools</title>
+    <authors>Joseph Magly</authors>
+    <owners></owners>
+    <description>
+      Helper libraries and templates to assit in developing BlockScripts for the game SpaceEngineers. Incudes Mocked grid items to allow for indepth atomic testing of block scripts while easily pasting the logic into the game edit window. A locally installed copy of SpaceEngineers is required to complie and run.
+    </description>
+    <releaseNotes>
+      * Initial Push of BSET Tools and Framework
+
+      - BSET (BlockScript Edit Tools) - A series of tools, libs, examples and other components to assist in the development of ProgrammableBlocks
+      - Basic framework for atomically testable block scripts with Mocks.
+      - Templates for creating correctly formatted block scripts and block script tests
+
+      A locally installed copy of SpaceEngineers is required to complie and run.
+    </releaseNotes>
+    <language>en-US</language>
+    <projectUrl>https://github.com/jmagly/BlockScriptEditTools</projectUrl>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <copyright>Copyright 2015</copyright>
+    <dependencies>
+        <group targetFramework="net40">
+          <dependency id="Moq" version="4.2.1502.911" />
+        </group>
+    </dependencies>
+    <references></references>
+    <tags>blockscript, spaceengineers, gaming, unit test, atomic</tags>
+  </metadata>
+  <files>
+    <file src="content\**\*" target="content" />
+    <file src="bin\debug\BSET.Domain.dll" target="lib\net45" />
+    <file src="bin\debug\BSET.Mocks.dll" target="lib\net45" />
+    <file src="bin\debug\BSET.ScriptDevelopment.dll" target="lib\net45" />
+    <file src="bin\debug\BSET.Testing.dll" target="lib\net45" />
+  </files>
+</package>
