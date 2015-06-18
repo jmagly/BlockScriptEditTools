@@ -1,6 +1,6 @@
-<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+﻿<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
-    <Name>SEBlockScriptsTests</Name>
+    <Name>BSET BlockScriptsTests</Name>
     <Description>Unit Test template for SpaceEngineers BlockScripts</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
@@ -11,13 +11,13 @@
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
-    <Icon>__TemplateIcon.ico</Icon>
+    <Icon>BlockScriptTestsProjectTemplate.ico</Icon>
   </TemplateData>
   <TemplateContent>
-    <Project TargetFileName="$safeprojectname$.csproj" File="Tests.csproj" ReplaceParameters="true">
+    <Project TargetFileName="$safeprojectname$.csproj" File="ProjectTemplate.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="ExampleTest.cs">ExampleTest.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
-	  <ProjectItem ReplaceParameters="true" TargetFileName="build.properties">build.properties</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="build.properties">build.properties</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       </Folder>

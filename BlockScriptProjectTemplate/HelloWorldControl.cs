@@ -3,7 +3,8 @@
     using System;
     using System.Collections.Generic;
     using System.Collections;
-    using System.Text;
+    $if$ ($targetframeworkversion$ >= 3.5)using System.Linq;
+    $endif$using System.Text;
 
     using VRage;
     using VRageMath;

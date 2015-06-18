@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("$safeprojectname$")]
+[assembly: AssemblyTitle("BlockScriptItemTemplate")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("$safeprojectname$")]
+[assembly: AssemblyProduct("BlockScriptItemTemplate")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("002f96ad-45d6-4706-8d1a-9df24e5723f5")]
+[assembly: Guid("38e535cd-23ee-4a4f-aad5-6ea912c9c539")]
 
 // Version information for an assembly consists of the following four values:
 //

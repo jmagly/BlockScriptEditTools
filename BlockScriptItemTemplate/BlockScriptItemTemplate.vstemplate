@@ -1,11 +1,11 @@
-<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+﻿<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
   <TemplateData>
-    <DefaultName>SEBlockScriptTest.cs</DefaultName>
-    <Name>BSET BlockScript Test</Name>
-    <Description>SpaceEngineers BlockScript Test using BSET</Description>
+    <DefaultName>SEBlockScript.cs</DefaultName>
+    <Name>BSET BlockScript</Name>
+    <Description>SpaceEngineers BlockScript wrapped using BSET for testing and validation.</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>10</SortOrder>
-    <Icon>__TemplateIcon.ico</Icon>
+    <Icon>BlockScriptItemTemplate.ico</Icon>
   </TemplateData>
   <TemplateContent>
     <References>
@@ -46,9 +46,6 @@
         <Assembly>VRage.Render11</Assembly>
       </Reference>
       <Reference>
-        <Assembly>Moq</Assembly>
-      </Reference>
-      <Reference>
         <Assembly>System.Xml.Linq</Assembly>
       </Reference>
       <Reference>
@@ -64,30 +61,15 @@
         <Assembly>System.Xml</Assembly>
       </Reference>
       <Reference>
-        <Assembly>xunit.abstractions</Assembly>
-      </Reference>
-      <Reference>
-        <Assembly>xunit.assert</Assembly>
-      </Reference>
-      <Reference>
-        <Assembly>xunit.core</Assembly>
-      </Reference>
-      <Reference>
         <Assembly>BSET.Domain</Assembly>
-      </Reference>
-      <Reference>
-        <Assembly>BSET.Mocks</Assembly>
       </Reference>
       <Reference>
         <Assembly>BSET.ScriptDevelopment</Assembly>
       </Reference>
       <Reference>
-        <Assembly>BSET.Testing</Assembly>
-      </Reference>
-      <Reference>
         <Assembly>mscorlib</Assembly>
       </Reference>
     </References>
-    <ProjectItem SubType="Code" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">ExampleTest.cs</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">Class.cs</ProjectItem>
   </TemplateContent>
 </VSTemplate>

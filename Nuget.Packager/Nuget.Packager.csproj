@@ -63,6 +63,7 @@
     <None Include="tools\uninstall.ps1" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="content\" />
     <Folder Include="lib\" />
     <Folder Include="src\" />
   </ItemGroup>
@@ -83,14 +84,6 @@
       <Project>{ceb98408-6b83-4c2a-a442-0a9020c5f272}</Project>
       <Name>Testing</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="content\BSET_Templates\BlockScriptTest\ExampleTest.cs" />
-    <Content Include="content\BSET_Templates\BlockScript\HelloWorldControl.cs" />    
-    <Content Include="content\BSET_Templates\BlockScriptTest\MyTemplate.vstemplate" />
-    <Content Include="content\BSET_Templates\BlockScriptTest\__TemplateIcon.ico" />
-    <Content Include="content\BSET_Templates\BlockScript\MyTemplate.vstemplate" />
-    <Content Include="content\BSET_Templates\BlockScript\__TemplateIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -41,7 +41,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="build.properties" />
     <None Include="packages.config">
       <SubType>Designer</SubType>

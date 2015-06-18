@@ -1,26 +1,40 @@
-﻿namespace $rootnamespace$
+﻿namespace $safeprojectname$
 {
+    using System;
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
+    $if$ ($targetframeworkversion$ >= 3.5)using System.Linq;
+    $endif$using System.Text;
     using System.Threading.Tasks;
 
     using Sandbox.ModAPI.Ingame;
     using Sandbox.ModAPI.Interfaces;
 
     using Moq;
-
+    //HELLO WORLD
     using Xunit;
 
     using BSET.Mocks;
     using BSET.Testing;
-
+	
     /// <summary>
     /// Example test using the Hello World control. 
     /// </summary>
-    public class $safeitemname$ : BlockScriptTest
+    public class ExampleTest : BlockScriptTest
     {
+        /// <summary>
+        /// When in game a programmable block provides the context of the running script. Set the name of that context by overriding this property if needed.
+        /// </summary>
+        protected override string ExecutionBlockName
+        {
+            get
+            {
+                return "MY CUSTOM EXECUTION NAME";
+                //return base.ExecutionBlockName;
+            }
+        }
+
         /// <summary>
         /// Pass Hello World Test a single argument and ensure the echo is as expected.
         /// </summary>
@@ -31,11 +45,25 @@
             var gridTerminalSystem = CurrentGts;
 
             // Get the default programmable block that will "run" the script
-            var executingBlock = ExecutionBlock;
+            var executionBlock = ExecutionBlock;
 
             // Create the control wrapper for the block script to be tested, be sure to provide the 
             //GridTerminalSystem and Executing programmable block instances
-            //var control = new MYCONTROL(gridTerminalSystem, executingBlock);
+            /*var control = new HelloWorldControl(gridTerminalSystem, executionBlock);
+
+            // Store test data in variables so that it can be used in validation later
+            var testArg = "I-Am a Test Argument";
+
+            // Execute the control
+            control.MainMethod(testArg);
+
+            // Using Xuint API in this case, validate the results
+            // There should only be one echo message
+            Assert.True(control.EchoOutput.Count == 1);
+
+            // Ensure the message matches as expected
+            Assert.True(control.EchoOutput.First().Equals(string.Format(HelloWorldControl.MessageTemplate, testArg, ExecutionBlockName)));
+			*/
         }
 
         /* OPTIONAL - Useful overrides for customizing testing - see other test classes for examples
