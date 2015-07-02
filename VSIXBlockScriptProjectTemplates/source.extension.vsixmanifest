@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="BSETTemplates..3034df58-3692-42d2-9a26-5eec443740ed" Version="1.0.2" Language="en-US" Publisher="ArgumentNullException" />
+    <Identity Id="BSETTemplates..3034df58-3692-42d2-9a26-5eec443740ed" Version="1.0.4" Language="en-US" Publisher="ArgumentNullException" />
     <DisplayName>BSETTemplates</DisplayName>
     <Description xml:space="preserve">BlockScriptEditTools - Template Package</Description>
     <MoreInfo>https://github.com/jmagly/BlockScriptEditTools/wiki</MoreInfo>

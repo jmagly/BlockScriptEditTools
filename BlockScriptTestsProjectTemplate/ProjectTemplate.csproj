@@ -35,16 +35,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BSET.Domain">
-      <HintPath>..\packages\SEBSET.1.0.0\lib\net45\BSET.Domain.dll</HintPath>
+      <HintPath>..\packages\SEBSET.1.0.0-ALPHA\lib\net45\BSET.Domain.dll</HintPath>
     </Reference>
     <Reference Include="BSET.Mocks">
-      <HintPath>..\packages\SEBSET.1.0.0\lib\net45\BSET.Mocks.dll</HintPath>
+      <HintPath>..\packages\SEBSET.1.0.0-ALPHA\lib\net45\BSET.Mocks.dll</HintPath>
     </Reference>
     <Reference Include="BSET.ScriptDevelopment">
-      <HintPath>..\packages\SEBSET.1.0.0\lib\net45\BSET.ScriptDevelopment.dll</HintPath>
+      <HintPath>..\packages\SEBSET.1.0.0-ALPHA\lib\net45\BSET.ScriptDevelopment.dll</HintPath>
     </Reference>
     <Reference Include="BSET.Testing">
-      <HintPath>..\packages\SEBSET.1.0.0\lib\net45\BSET.Testing.dll</HintPath>
+      <HintPath>..\packages\SEBSET.1.0.0-ALPHA\lib\net45\BSET.Testing.dll</HintPath>
     </Reference>
     <Reference Include="Moq">
       <HintPath>..\packages\Moq.4.2.1502.0911\lib\net40\Moq.dll</HintPath>
